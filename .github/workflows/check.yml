@@ -1,11 +1,12 @@
 name: check
 on: push
-env: 
-    CI: true
 jobs:
-    build:
+    main:
         runs-on: ubuntu-latest
         steps:
-            - run: make setup
-            - run: make test
-            - run: make lint
+            - name: make-setup
+              run: make setup
+            - name: make-test
+              run: make test
+            - name: make-lint
+              run: make lint
