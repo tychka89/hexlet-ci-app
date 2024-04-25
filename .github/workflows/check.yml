@@ -1,7 +1,7 @@
 name: check
 on: push
 jobs:
-    main:
+    check:
         runs-on: ubuntu-latest
         steps:
             - name: make-setup
